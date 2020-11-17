@@ -80,27 +80,29 @@
   
     <tbody style="color: white;font-size: 17px;font-family:Times New Roman;">
     	<tr>
-        <td><img src="square.png" alt="" style="width:10px;">  ES2</td>
+        <td><img src="square.png" alt="" style="width:10px;">  EC2</td>
         <td><img src="square.png" alt="" style="width:10px;">  S3</td>
         <td><img src="square.png" alt="" style="width:10px;">  CloudFront</td>
       </tr>
       <tr>
         <td><img src="square.png" alt="" style="width:10px;">  Route 53</td>
-        <td><img src="square.png" alt="" style="width:10px;">  DynamoDB</td>
-        <td><img src="square.png" alt="" style="width:10px;">  API Gateway</td>
+        <td><img src="square.png" alt="" style="width:10px;">  Pipeline</td>
+        <td><img src="square.png" alt="" style="width:10px;">  Cloudformation</td>
       </tr>
       <tr>
         <td><img src="square.png" alt="" style="width:10px;">  Lambda</td>
-        <td><img src="square.png" alt="" style="width:10px;">  Step Functions</td>
+        <td><img src="square.png" alt="" style="width:10px;">  CloudWatch</td>
         <td><img src="square.png" alt="" style="width:10px;">  SNS</td>
       </tr>
       <tr>
-        <td><img src="square.png" alt="" style="width:10px;">  SES</td>
+        <td><img src="square.png" alt="" style="width:10px;">  SQS</td>
         <td><img src="square.png" alt="" style="width:10px;">  Cognito</td>
         <td><img src="square.png" alt="" style="width:10px;">  CodePipeline</td>
       </tr>
       <tr>
       	<td><img src="square.png" alt="" style="width:10px;">  Beanstalk</td>
+		td><img src="square.png" alt="" style="width:10px;">  DynamoDB</td>
+		<td><img src="square.png" alt="" style="width:10px;">  API Gateway</td>
       </tr>
     </tbody>
   </table>
@@ -138,8 +140,9 @@
   <h2 style="font-family:Rockwell;color:white;font-weight:bold;font-size:20px;">CLOUD RESUME</h2>
   <p  style="color: white;font-size: 17px;font-family:Times New Roman;">The project is the website you are currently on. The frontend is built with HTML and custom CSS. <br> The backend utilizes AWS services such as S3, Route 53, Pipeline, SNS. <br> Website is hosted using s3 static website hosting service with pipeline configured for CI/CD deployment  <br> There is addtional Test environment configured in pipeline to have overview of changes before deploying them in production. <br> Manual approval is needed for applying the changes in production environment. </p>
    <h2 style="font-family:Rockwell;color:white;font-weight:bold;font-size:20px;">Character Recognition (S3 + Rekognition)</h2>
-   <h2 style="font-family:Rockwell;color:white;font-weight:bold;font-size:20px;">Create HTTP Web services (API Gateway)</h2>
+  <p  style="color: white;font-size: 17px;font-family:Times New Roman;"> This project uses Rekognition to analyze files uploaded in s3 bucket triggered by lambda and upload extracted text back in s3.</p> 
    <h2 style="font-family:Rockwell;color:white;font-weight:bold;font-size:20px;">Sentiment analysis (DynamoDB + Comprehand)</h2>
+  <p  style="color: white;font-size: 17px;font-family:Times New Roman;"> This project reads reviews entered in Dynamodb, Dynamodb invokes lambda that us-es Comprehend API to perform analysis and update if the review is positive/negative back in Dynamodb.</p>  
  </div>
 
   <div class="container mt-4">
